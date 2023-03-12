@@ -19,18 +19,18 @@ physical_devices = tf.config.list_physical_devices('GPU')
 print(physical_devices)
 
 #CHANGE USERPATH
-USERPATH = '/Users/Mark Prucnal/Desktop/School work/Senior Project/YOCOgithub/YOCO/'
+USERPATH = 'C:\\Users\\Mark Prucnal\\Desktop\\School work\\Senior Project\\YOCOgithub\\YOCO\\'
 
 def main():
     model_name = 'YOCOv0.1-ailBennu'
     
     # Training data/variable setup
-    box_anno_path = USERPATH + "model_data/annotations/box_anno_ailBennu.txt"
-    dom_anno_path = USERPATH + "model_data/annotations/dom_anno_ailBennu.txt"
-    classes_path = USERPATH + 'model_data/class_lists/ailBennu_classes.txt'
-    log_dir = USERPATH + 'logs/' + model_name  + '/'
+    box_anno_path = USERPATH + "model_data\\annotations\\box_anno_ailBennu.txt"
+    dom_anno_path = USERPATH + "model_data\\annotations\\dom_anno_ailBennu.txt"
+    classes_path = USERPATH + 'model_data\\class_lists\\ailBennu_classes.txt'
+    log_dir = USERPATH + 'logs\\' + model_name  + '\\'
     
-    anchors_path = USERPATH + 'model_data/anchors/yolo_anchors.txt'
+    anchors_path = USERPATH + 'model_data\\anchors\\yolo_anchors.txt'
     class_names = get_classes(classes_path)
     num_classes = len(class_names)
     anchors = get_anchors(anchors_path)
@@ -38,7 +38,7 @@ def main():
 
     # Create YOCO model
     model = create_model(input_shape, anchors, num_classes,
-        weights_path= USERPATH + 'model_data/yolov3.h5') # make sure you know what you freeze
+        weights_path= USERPATH + 'model_data\\yolov3.h5') # make sure you know what you freeze
     model.summary()
 
     # Callbacks
