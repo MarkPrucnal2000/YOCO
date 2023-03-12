@@ -19,7 +19,7 @@ physical_devices = tf.config.list_physical_devices('GPU')
 print(physical_devices)
 
 #CHANGE USERPATH
-USERPATH = 'C:\\Users\\Mark Prucnal\\Desktop\\bennu'
+USERPATH = '/Users/Mark Prucnal/Desktop/bennu'
 
 def main():
     model_name = 'YOCOv0.1-ailBennu'
