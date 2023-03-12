@@ -19,7 +19,7 @@ physical_devices = tf.config.list_physical_devices('GPU')
 print(physical_devices)
 
 #CHANGE USERPATH
-USERPATH = '/Users/Mark Prucnal/Desktop/School work/Senior Project/YOCOgithub/YOCO'
+USERPATH = '/Users/Mark Prucnal/Desktop/School work/Senior Project/YOCOgithub/YOCO/'
 
 def main():
     model_name = 'YOCOv0.1-ailBennu'
